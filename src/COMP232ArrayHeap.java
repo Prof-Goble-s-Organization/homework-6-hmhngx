@@ -49,10 +49,10 @@ public class COMP232ArrayHeap<K extends Comparable<K>, V> implements COMP232Prio
 			// add the node to the heap.
 			tree.add(new HeapNode<K,V>(keys[i], values[i]));
 		}
-		
+
 		// verify that we have a valid heap!
 		if (!checkHeapProperty()) {
-				throw new IllegalArgumentException("Heap is not valid.");
+			throw new IllegalArgumentException("Heap is not valid.");
 		}
 	}
 

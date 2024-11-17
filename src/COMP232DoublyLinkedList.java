@@ -165,7 +165,7 @@ public class COMP232DoublyLinkedList<E> implements COMP232List<E> {
 			if (index != size) {
 				node = getNode(index);
 			}		
-		
+
 			node.prev.next = list.head.next;
 			list.head.next.prev = node.prev;
 
@@ -190,7 +190,7 @@ public class COMP232DoublyLinkedList<E> implements COMP232List<E> {
 		}
 		return buf.toString().trim();
 	}
-	
+
 	/*
 	 * Defines the node object for the doubly linked list. Note: Fields are
 	 * public so that they can be accessed directly rather than via accessors
